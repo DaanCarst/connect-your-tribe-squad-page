@@ -1,5 +1,6 @@
 :root {
     --main-light: #424549;
+    --main : #99aab5;
     --main-dark: #2c2f33;
     --almost-black: #23272a;
     --blue-main: #7289da;
@@ -14,8 +15,79 @@ body {
 nav {
     background-color: var(--almost-black);
     width: 100%;
+    position: absolute;
 }
 
 .nav-img {
-    width: 4em;
+    width: 3.5em;
+    margin-left: .8em;
+    margin-top: .2em;
 }
+
+.icon-container {
+    margin-left: 0%;
+    width: 5em;
+    height: 98%;
+    background-color: var(--almost-black);
+    position: absolute;
+    margin-top: 1em;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-container {
+    margin-top: 1em;
+    width: 3.5em;
+    height: 3.5em;
+    background-color: var(--main-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.logo-container:hover {
+    background-color: var(--blue-main);
+}
+
+.logo-left {
+    width: 55%;
+    height: 40%;
+}
+
+.logo-container-gengar {
+    margin-top: 1em;
+    width: 3.5em;
+    height: 3.5em;
+    background-color: var(--main-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-image: url("assets/gengar.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.logo-container-a, .logo-container-b, .logo-container-c {
+    margin-top: 1em;
+    width: 3.5em;
+    height: 3.5em;
+    background-color: #66e5bf;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    color: #050542;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 750;
+}
+
+
