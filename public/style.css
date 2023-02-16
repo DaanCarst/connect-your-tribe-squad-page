@@ -47,10 +47,12 @@ nav {
     align-items: center;
     align-content: center;
     justify-content: center;
+    transition: .25s;
 }
 
 .logo-container:hover {
     background-color: var(--blue-main);
+    border-radius: 25%;
 }
 
 .logo-left {
@@ -71,9 +73,18 @@ nav {
     background-image: url("assets/gengar.jpg");
     background-position: center;
     background-size: cover;
+    transition: .25s;
+}
+
+.logo-container-FDND {
+    font-weight: 600;
 }
 
 .logo-container-a, .logo-container-b, .logo-container-c {
+    font-weight: 750;
+}
+
+.logo-container-a, .logo-container-b, .logo-container-c, .logo-container-FDND {
     margin-top: 1em;
     width: 3.5em;
     height: 3.5em;
@@ -87,7 +98,12 @@ nav {
     background-size: cover;
     color: #050542;
     font-family:Arial, Helvetica, sans-serif;
-    font-weight: 750;
+    transition: .25s;
 }
+
+.logo-container-a:hover, .logo-container-b:hover, .logo-container-c:hover, .logo-container-FDND:hover, .logo-container-gengar:hover {
+    border-radius: 25%;
+}
+
 
 
