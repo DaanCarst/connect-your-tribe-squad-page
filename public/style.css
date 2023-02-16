@@ -4,12 +4,14 @@
     --main-dark: #2c2f33;
     --almost-black: #23272a;
     --blue-main: #7289da;
+    --main-hover: #99AAb5;
   }
 
 body {
     background-color: var(--main-light);
     padding: 0;
     margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -85,7 +87,7 @@ nav {
 }
 
 .logo-container-a, .logo-container-b, .logo-container-c, .logo-container-FDND {
-    margin-top: 1em;
+    margin-top: .6em;
     width: 3.5em;
     height: 3.5em;
     background-color: #66e5bf;
@@ -101,8 +103,135 @@ nav {
     transition: .25s;
 }
 
-.logo-container-a:hover, .logo-container-b:hover, .logo-container-c:hover, .logo-container-FDND:hover, .logo-container-gengar:hover {
+.logo-container-plus, .logo-container-compass {
+    margin-top: .6em;
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    transition: .25s;
+    background-color: var(--main-light);
+}
+
+ion-icon {
+    color: rgb(11, 190, 11);
+}
+
+.logo-container-a:hover, .logo-container-b:hover, .logo-container-c:hover, .logo-container-FDND:hover, .logo-container-gengar:hover, .logo-container-plus:hover, .logo-container-compass:hover {
     border-radius: 25%;
+}
+
+.logo-container-plus:hover, .logo-container-compass:hover {
+    background-color: rgb(11, 190, 11);
+}
+
+ion-icon:hover {
+    color: white;
+}
+
+.content {
+    margin-left: 5em;
+    width: 12em;
+    height: 98%;
+    background-color: var(--main-dark);
+    position: absolute;
+    margin-top: 1.1em;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.friends {
+    margin: .5em;
+    color: var(--main);
+}
+
+.friend-container {
+    margin-top: .5em;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    color: var(--main);
+    width: 95%;
+    border-radius: .5em;
+}
+
+.messages {
+    color: var(--main);
+    width: 95%;
+    border-radius: .5em;
+    margin-top: .5em;
+}
+
+.messages-text {
+    font-size: .8em;
+    margin-left: 1em;
+}
+
+.friend-container:hover {
+    color: white;
+    background-color: var(--main-light);
+}
+
+.messages-text:hover {
+    color: white;
+}
+
+.gengar-container {
+    grid-area: gengar;
+    width: 20px;
+    height: 20px;
+    background-color: purple;
+}
+
+.a-container {
+    grid-area: a;
+    width: 20px;
+    height: 20px;
+    background-color: purple;
+}
+
+.b-container {
+    grid-area: b;
+    width: 20px;
+    height: 20px;
+    background-color: orangered;
+}
+
+.c-container {
+    grid-area: c;
+    width: 20px;
+    height: 20px;
+    background-color: green;
+}
+
+.fdnd-container {
+    grid-area: fdnd;
+    width: 20px;
+    height: 20px;
+    
+}
+
+
+.block-container {
+    margin-left: 90em;
+    position: absolute;
+    width: 75em;
+    height: 100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "gengar a b"
+    "c fdnd";
+    background-color: yellow;
 }
 
 
