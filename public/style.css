@@ -1,0 +1,21 @@
+:root {
+    --main-light: #424549;
+    --main-dark: #2c2f33;
+    --almost-black: #23272a;
+    --blue-main: #7289da;
+  }
+
+body {
+    background-color: var(--main-light);
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background-color: var(--almost-black);
+    width: 100%;
+}
+
+.nav-img {
+    width: 4em;
+}
