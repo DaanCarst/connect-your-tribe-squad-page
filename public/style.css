@@ -209,8 +209,6 @@ main {
     grid-template-areas:
     "gengar a b"
     "c fdnd likes";
-    /* background-color: yellow; */
-    /* padding: 1rem; */
 }
 
 .block-container section {
