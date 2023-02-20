@@ -5,6 +5,10 @@ const url = 'https://whois.fdnd.nl/api/v1/member/daan-carstens'
 const data = await fetch(url).then((response) => response.json())
 console.log(data)
 
+const urlC = 'https://whois.fdnd.nl/api/v1/squad/squat-c-2022'
+const dataC = await fetch(urlC).then((response) => response.json())
+console.log(dataC)
+
 // Maak een nieuwe express app aan
 const app = express()
 
@@ -20,6 +24,12 @@ app.get('/', function (req, res) {
   // res.send('Hello World!')
   res.render('index', data)
 })
+
+app.get('/squadc', function (req, res) {
+  // res.send('Hello World!')
+  res.render('squadc', data)
+})
+
 
 // Stel het poortnummer in waar express op gaat luisteren
 app.set('port', process.env.PORT || 8000)
