@@ -10,6 +10,7 @@
   html, body {
     height: 100%;
     position: relative;
+    overflow: auto;
 }
 
 main {
@@ -40,7 +41,7 @@ nav {
 .icon-container {
     margin-left: 0%;
     width: 5em;
-    height: 98%;
+    height: 100%;
     background-color: var(--almost-black);
     /* position: absolute; */
     /* margin-top: 1em; */
@@ -153,7 +154,7 @@ main {
 .content {
     width: 23%;
     max-width: 220px;
-    height: 98%;
+    height: 100%;
     background-color: var(--main-dark);
     display: flex;
     justify-content: start;
@@ -209,6 +210,7 @@ main {
     grid-template-areas:
     "gengar a b"
     "c fdnd likes";
+    padding: 1em;
 }
 
 .block-container section {
@@ -219,7 +221,12 @@ main {
 
 .gengar-container {
     grid-area: gengar;
-    background-color: purple;
+    background-color: var(--main-dark);
+    border-radius: 10%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
 }
 
 .a-container {
