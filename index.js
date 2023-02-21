@@ -3,11 +3,23 @@ import express from 'express'
 
 const url = 'https://whois.fdnd.nl/api/v1/member/daan-carstens'
 const data = await fetch(url).then((response) => response.json())
-console.log(data)
+
 
 const urlC = 'https://whois.fdnd.nl/api/v1/squad/squat-c-2022'
 const dataC = await fetch(urlC).then((response) => response.json())
 console.log(dataC)
+
+const urlA = 'https://whois.fdnd.nl/api/v1/squad/squad-a-2022'
+const dataA = await fetch(urlA).then((response) => response.json())
+console.log(dataA)
+
+const urlB = 'https://whois.fdnd.nl/api/v1/squad/squad-b-2022'
+const dataB = await fetch(urlB).then((response) => response.json())
+console.log(dataB)
+
+const urlFDND = 'https://whois.fdnd.nl/api/v1/squad/founders-2021'
+const dataFDND = await fetch(urlFDND).then((response) => response.json())
+console.log(dataFDND)
 
 // Maak een nieuwe express app aan
 const app = express()
@@ -27,7 +39,22 @@ app.get('/', function (req, res) {
 
 app.get('/squadc', function (req, res) {
   // res.send('Hello World!')
-  res.render('squadc', data)
+  res.render('squadc', dataC)
+})
+
+app.get('/squada', function (req, res) {
+  // res.send('Hello World!')
+  res.render('squada', dataA)
+})
+
+app.get('/squadb', function (req, res) {
+  // res.send('Hello World!')
+  res.render('squadb', dataB)
+})
+
+app.get('/fdnd', function (req, res) {
+  // res.send('Hello World!')
+  res.render('fdnd', dataFDND)
 })
 
 

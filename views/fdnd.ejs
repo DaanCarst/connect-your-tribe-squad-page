@@ -39,12 +39,35 @@
         </section>
     </section>
     <section class="block-container">
-        <section class="gengar-container"><div class="icon-block-gengar"></div><p>Digimon Go</p><p>leden: 2</p></section>
-        <section class="a-container"><a href="squada"><div class="icon-block-a"><p>A</p></div><p>Squad A</p><p>leden: 2</p></a></section>
-        <section class="b-container"><a href="squadb"><div class="icon-block-a"><p>B</p></div><p>Squad B</p><p>leden: 2</p></a></section>
-        <section class="c-container"><a href="squadc"><div class="icon-block-a"><p>C</p></div><p>Squat C</p><p>leden: 2</p></a></section>
-        <section class="fdnd-container"><a href="fdnd"><div class="icon-block-FDND"><p>FDND</p></div><p>FDND Docenten</p><p>leden: 2</p></a></section>
-        <section class="like-container"><div class="icon-block-a"><p>A</p></div><p>Geliked</p><p>leden: 2</p></section>
+        <table>
+            <tbody>
+                <tr>
+                    <th>
+                        Docent naam
+                    </th>
+                    <th>
+                        GithubHandle
+                    </th>
+                    <th>
+                        Nickname
+                    </th>
+                </tr>
+                <% squad.members.forEach(member => { %>
+                <tr>
+                    <td class="align">
+                        <% if (member.avatar) { %><img src="<%= member.avatar %>" alt="avatar <%= member.name %>" class="avatar-image"><% }else{ %><img
+                            src="/assets/gengar.jpg" alt="avatar <%= member.name %>" class="avatar-image"><% } %><%= member.name %>
+                    </td>
+                    <td>
+                        <%= member.gitHubHandle %>
+                    </td>
+                    <td>
+                        <%= member.nickname %>
+                    </td>
+                </tr>
+                <% }) %>
+            </tbody>
+        </table>
     </section>
 </main>
 

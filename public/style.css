@@ -212,6 +212,7 @@ main {
     "gengar a b"
     "c fdnd likes";
     padding: 1em;
+    overflow: auto;
 }
 
 .block-container section {
@@ -323,4 +324,28 @@ main {
     align-items: center;
     flex-direction: column;
     color: var(--main);
+}
+
+.avatar-image {
+    max-width: 3.5em;
+    min-width: 3.5em;
+    max-height: 3.5em;
+    min-height: 3.5em;
+    margin-right: 10px;
+}
+
+.align {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+tr th {
+    text-align: left;
+    color: var(--main);
+}
+
+td, th {
+  padding-top: .7em; 
+  color: var(--main);
 }
