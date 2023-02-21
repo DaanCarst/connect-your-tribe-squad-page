@@ -349,3 +349,15 @@ td, th {
   padding-top: .7em; 
   color: var(--main);
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
