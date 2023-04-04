@@ -7,28 +7,12 @@
 
   * [Beschrijving](#beschrijving)
   * [Kenmerken](#kenmerken)
-  * [Installatie](#installatie)
-  * [Gebruik](#gebruik)
-  * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+Met deze website kan je bekijken naar wie er allemaal in welke squads zitten. Deze website haalt die data op uit een speciale API die hier voor is gemaakt.
 
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+Voor deze website heb ik vooral NODEJS gebruikt en de API. Ik heb ook gewoon gebruik gemaakt van HTML & CSS om de website optebouwen.
 
-## Installatie
-<!-- Bij Installatie staat stap-voor-stap beschreven hoe je de development omgeving moet inrichten om aan de repository te kunnen werken. -->
+NodeJS doet javascript op de server. Met nodejs kan je dan dus data ophalen uit een API, Express is dan weer de framework die de routing doet waar de data vandaan moet komen. EJS is een taal waarmee je HTML text kan genereren uit de API zelf.
 
-## Gebruik
-
-## Bronnen
-
-## Licentie
-
-![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
-
-This work is licensed under [GNU GPLv3](./LICENSE).
