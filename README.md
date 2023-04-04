@@ -1,7 +1,7 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-# Titel
-Hallo Rick
+
+# Squad page met API
+![squad page](https://cdn.discordapp.com/attachments/793090681010257933/1092836879793135766/Screenshot_2023-04-04_174217.jpg)
 
 ## Inhoudsopgave
 
