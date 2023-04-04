@@ -9,7 +9,7 @@
   * [Kenmerken](#kenmerken)
 
 ## Beschrijving
-Met deze website kan je bekijken naar wie er allemaal in welke squads zitten. Deze website haalt die data op uit een speciale API die hier voor is gemaakt.
+De bedoeling van deze website is dat we een pagina maakt waar je iedereen uit elke squad kunt zien met behlup van een API. Ik heb gekozen om de app discord na te maken en via dat de data uit de API te tonen. Ik heb dan dus een website gemaakt die lijkt op discord waarmee je door alle squad heen kunt en kan bekijken wie daar inzit. Alle data die dan op deze pagina staat komt uit de WHOIS API.
 
 ## Kenmerken
 Voor deze website heb ik vooral NODEJS gebruikt en de API. Ik heb ook gewoon gebruik gemaakt van HTML & CSS om de website optebouwen.
