@@ -52,9 +52,11 @@
                         Nickname
                     </th>
                 </tr>
+                <--! for each loop zodat er iets komt voor elke member -->
                 <% squad.members.forEach(member => { %>
                 <tr>
                     <td class="align">
+                    <--! Hier word er gekeken of er een image gepost is, zo niet dan word een standaard image gebruikt -->
                         <% if (member.avatar) { %><img src="<%= member.avatar %>" alt="avatar <%= member.name %>" class="avatar-image"><% }else{ %><img
                             src="/assets/gengar.jpg" alt="avatar <%= member.name %>" class="avatar-image"><% } %><%= member.name %>
                     </td>
